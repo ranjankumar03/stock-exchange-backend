@@ -1,7 +1,7 @@
-package com.bofa.stock.exchange.cache;
+package com.stock.exchange.cache;
 
-import com.bofa.stock.exchange.service.enums.OrderType;
-import com.bofa.stock.exchange.service.pojo.Order;
+import com.stock.exchange.service.enums.OrderType;
+import com.stock.exchange.service.pojo.Order;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
