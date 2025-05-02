@@ -8,9 +8,10 @@ import java.util.Queue;
 /**
  * @author ranjankumar on 29/1/2022
  */
+@SuppressWarnings("hiding")
 public interface OrderBookCache<OrderType, Order>
 {
-    void put(com.bofa.stock.exchange.service.enums.OrderType key, Order value);
+    void put(OrderType key, Order value);
 
     Queue<Order> get(OrderType key);
 
@@ -19,5 +20,4 @@ public interface OrderBookCache<OrderType, Order>
     boolean clear();
 
     Map<OrderType, Queue<Order>> getOrderBook();
-
 }
