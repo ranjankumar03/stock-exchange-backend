@@ -11,6 +11,7 @@ import java.util.Queue;
 @SuppressWarnings("hiding")
 public interface OrderBookCache<OrderType, Order>
 {
+    
     void put(OrderType key, Order value);
 
     Queue<Order> get(OrderType key);
